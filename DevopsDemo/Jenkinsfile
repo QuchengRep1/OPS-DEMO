@@ -8,7 +8,10 @@ node {
     echo 'Hello World Build'
     sh '''
         ssh -o StrictHostKeyChecking=no -i /root/uat_hadoop_master.pem  root@172.16.4.151 "touch /tmp/1639.record;touch /tmp/1641.record;
-        touch /tmp/1645.record; aws s3 cp s3://opt/zabbix_agt_svr_port_pcap.tgz /tmp/ "
+        touch /tmp/1645.record; aws s3 cp s3://opt/zabbix_agt_svr_port_pcap.tgz /tmp/ 
+	touch /tmp/1655.record;
+	touch /tmp/1705.record;
+	"
         
     '''
    }
