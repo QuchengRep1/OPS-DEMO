@@ -9,7 +9,6 @@ node {
     sh '''
         touch  /var/jenkins_home/1655.record;
         touch  /var/jenkins_home/1705.record;
-	/bin/kubectl get node -owide
 
     '''
    }
